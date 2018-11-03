@@ -1,0 +1,69 @@
+/*This stylesheet only related to jobseekersingupform.html form*/
+body {
+  background: #ccc;
+}
+
+
+#formNav {
+ background: black;
+}
+
+#formNote {
+  text-align: center;
+  color: gray;
+  padding-bottom: 20px;
+}
+
+/*controlling the entire signup form*/
+#formContainer {
+  background: white;
+  width: 30%;
+  padding:20px;
+  margin-bottom: 70px;
+}
+
+/*lg device screen*/
+@media only screen and (max-width: 1152px) and (min-width: 768px){
+  #formContainer {
+    width: 50%;
+  }
+}
+
+/*small device screen */
+@media only screen and (max-width: 590px){
+  #formContainer {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/*Tablet view*/
+@media only screen and (max-width: 768px) and (min-width: 590px){
+  #formContainer {
+    width: 700%;
+    margin-bottom: 40px;
+  }
+}
+
+#labelName {
+  color: gray;
+}
+
+#labelNameBtn {
+  color:  ;
+   
+}
+
+#theLoginText {
+  color: gray;  
+}
+
+
+#theLoginTextSecond { 
+  padding: 5px;
+}
+
+/*adding margin top to the signup btn*/
+#theSignUpBtn {
+  margin-top: 15px;
+}

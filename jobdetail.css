@@ -1,0 +1,55 @@
+/*This stylesheet is only entitle to 
+the Jobdetail.html page*/
+html {
+	background: #ccc;
+	user-select: none;
+}
+
+/*The job heading style*/
+#job_heading {
+	border-left: 5px solid rgb(41,128,185);
+	padding-left: 5px;
+}
+
+/*job detail container*/
+#job_detail_one {
+	background: white;
+	padding: 25px;
+	padding-bottom: 30px;
+	margin-bottom: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,50);
+}
+
+
+#jobdetialpara {
+	font-size: 18px;
+	line-height: 130%;
+}
+
+@media only screen and (max-width: 500px){
+	#jobdetailone {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	
+	#jobdetialpara {
+		font-size: 15px;
+		line-height: 120%;
+	}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+	#jobdetailone {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	#jobdetialpara {
+		font-size: 17px;
+		line-height: 120%;
+	}
+
+}

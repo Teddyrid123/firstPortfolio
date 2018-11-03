@@ -1,0 +1,126 @@
+<!-- This page is build using Bootstrap framework and it purpose is to collect the user job detials and be able to take the user to the payment plan page for further processing. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hibaku.com</title>
+    <!-- Bootstrap Css CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom StyleSheet  -->
+    <link rel="stylesheet" type="text/css" href="companyform.css"> 
+</head>
+<body>
+  <!-- top navbar -->
+<nav class="navbar navbar-dark bg-dark" id="formNav">
+  <a class="navbar-brand" href="#"><img src="image/logo.png" width="100"></a>
+</nav><br><br><br><br>
+<!-- getting user job details and submitting it to the DB -->
+
+<button class="uk-btn-success">Chris</button>
+
+<form>
+  <!-- Job header -->
+ <div class="container" id="formContainer">
+ 	<div class="alert alert-primary" role="alert">
+  <h4 class="alert-heading">Almost there!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <hr>
+   <a  class="btn btn-outline-primary" href="jobseekersignupform.html" role="button">For Job Seeker</a><br><br>
+</div>  
+ 	<h3 id="jobdetails">Job Details</h3><br>
+  <form class="needs-validation" novalidate>
+    <!-- Company Name -->
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputAddress" id="labelName">Company Name</label>
+      <input type="text" class="form-control" required>
+      <div class="invalid-feedback">
+        Please provide your full name.
+      </div>
+    </div>
+    <!-- Job Title -->
+    <label for="inputAddress" id="labelName">Job Title</label>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" required>
+    </div>
+     <!-- Job Location -->
+    <label for="inputAddress" id="labelName">Location of job (City, County)</label>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" id="inputAddress" required>
+    </div>
+      <!-- Job Type -->
+    <div class="form-group col-md-12">
+      <label for="inputState" id="labelName">Job Type</label>
+      <select id="inputState" class="form-control" required>
+        <option selected>Full-time</option>
+        <option>Part-time</option>
+        <option>Contract</option>
+        <option>Commission</option>
+        <option>Internship</option>
+        <option>Temporary</option>
+      </select>
+    </div>
+  </div>
+  <!-- Job Decription -->
+  <div class="container">
+	<div class="row">
+		 <h3 id="labelName">Job Decription</h3>
+		<div class="col-md-12">
+			<textarea id="txtedit"></textarea required>
+		</div>
+	</div>
+  </div><br><br>
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Continue</button>
+</form>
+</div><br><br><br>
+<div class="footer">
+	<span id="theFooter">Copyright <i class="uk-icon-copyright"></i> 2018 Hibaku,Inc All rights reserved</span>
+</div>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</script>
+
+
+
+
+<!-- The Bootstrap js CDN link -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<!-- custom js -->
+<!-- responable for the text editing section -->
+<script src="editor.js"></script>
+<!-- Script for text editing section -->
+<script>
+  $('#txtedit').Editor();
+</script>
+</body>
+</html>

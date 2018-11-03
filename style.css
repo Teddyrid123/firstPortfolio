@@ -1,0 +1,333 @@
+/*This is the home page Stylesheet and this 
+Stylesheet is only for the home page.*/
+html {
+	padding: 0;
+	margin: 0;
+}
+
+/*The nav item on the left side of the navbar*/
+#desktop_Nav_Item {
+	color: white;
+	font-size: 15px;
+}
+
+
+#desktop_Nav_Item:hover {
+	color: black;
+}
+
+#thejob:hover {
+	color: black;
+}
+
+/*The nav item on the right side of the navbar*/
+#nav_SignIn {
+	color: white;
+	margin-right: 20px;
+}
+
+#nav_SignIn:hover {
+	color: black;
+}
+
+#nav_Post_Job {
+	color:white;
+	border: 2px solid white;
+}
+
+#nav_Post_Job:hover {
+	 background: rgb(41,128,185);
+}
+
+/*styling the main navigation bar*/
+.desktop_navbar {
+	background: black; 	
+}
+
+.navStyle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+
+/*logo*/
+#brand_Img {
+	margin-left: 20px;
+}
+
+/*login modal*/
+#modal_bg {
+	background: linear-gradient(to left, rgb(25,118,210),rgb(0,172,193));
+}
+
+#get_Started_Text {
+	color: white;
+	text-align: center;
+}
+ 
+#modal_text_Color_one {
+	font-size: 25px;
+	padding: 10px;s
+	border-radius: 10px;
+}
+
+#modal_text_Color_two {
+	color: white;
+}
+
+/*The Lander container*/
+#lcontainer {
+ 	background: #ccc;
+ 	background-size: cover;
+ 	background-position: top center;
+ 	background-repeat: no-repeat;
+ 	height: 450px;
+ 	background-image: url(image/newBg.png);
+ 	display: flex;
+ 	margin-bottom: 100px;
+ 	/*background-attachment: fixed;*/
+ }
+
+/*for Screen that is lower than 768px(Tablet)*/
+ @media only screen and (max-width: 768px){
+ 	#lcontainer {
+ 		height: 350px;
+ 	}	
+ }
+
+/*for screen that is lower than 480px(mobial screen)*/
+@media only screen and (max-width: 480px){
+ 	#lcontainer {
+ 		height: 250px;
+ 	}
+ }
+
+/*lander page welcome note*/
+ .landing_Page_Note {
+ 	margin: auto;
+ }
+
+/*the search form*/
+ input {
+ 	display: inline-block;
+ 	font-size: 20px;
+ 	box-sizing: border-box;
+ 	color: gray;
+ }
+
+
+ input[type="text"] {
+ 	position: relative;
+ 	left: 50px;
+ 	background: #fff;
+ 	width: 340px;
+ 	height: 50px;
+ 	border: none;
+ 	outline: none;
+ 	padding: 0 25px;
+ 	border-radius: 25px 0  0 25px;
+ }
+
+ input[type="submit"] {
+ 	position: relative;
+ 	left: 5px;
+ 	background: rgb(41,128,185);
+ 	width: 150px;
+ 	height: 50px;
+ 	border: none;
+ 	outline: none;
+ 	padding: 0 25px;
+ 	color: white;
+ 	border-radius: 0 25px 25px 0;
+ }
+
+/*when that screen width is 904, 
+the search input should have a 50px margin left */
+@media only screen and (max-width: 904px) {
+	input[type="text"] {
+		margin-left: 50px;
+	}
+}
+
+/*Same method*/
+@media only screen and (max-width: 568px) {
+	input[type="text"] {
+		margin-left: 5px;
+	}
+}
+
+/*when the screen is 494 wide, the width and height value 
+of the input and submit should chance */
+@media only screen and (max-width: 494px) {
+	input[type="text"] {
+		width: 170px;
+		height: 40px;
+	}
+
+	input[type="submit"] {
+		height: 40px;
+		width: 100px;
+	}
+}
+
+
+@media only screen and (max-width: 768px;){
+	.welcome_Note {
+		left: 30%;
+	}
+}
+
+/*welcome text on top of the search bar*/
+ #findjob {
+ 	color: white;
+ 	text-align: center;
+ }
+
+/*Second container*/
+#second_container {
+	margin-bottom: 100px;
+	 
+}
+
+@media screen and (max-width: 500px) {
+	#second_container {
+		margin-bottom: 20px;
+	}
+}
+
+/*Third Container */
+#thridContainer {
+	margin-bottom: 100px;
+	 
+}
+
+/*third container text */
+#thridContainerText {
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 500px) {
+	#thirdContainerText {
+		margin-top: 20px;
+	}
+}
+
+/*giving the icons color*/
+#careerIcons {
+	color: rgb(41,128,185);
+}
+
+/*styling the panel paragraph */
+#ActivitiesText {
+	color: gray;
+	font-size: 15px;
+}
+
+/*giving a white background color to the panel*/
+#activitiesBox {
+	background: white;
+}
+
+#readMoreText {
+	color: gray;
+}
+
+
+/*What's Trending*/
+#whatT {
+	margin-bottom: 30px;
+	border-left: 10px solid rgb(41,128,185);
+	padding-left: 10px;
+}
+
+#fourth-container {
+	margin-bottom: 100px;
+}
+
+@media  screen and (max-width: 500px) {
+	#first_column {
+		margin-bottom: 10px;
+	}
+
+	#second_column {
+		margin-bottom: 10px;
+	}
+}
+
+/*Fifth Container*/
+.fifth-container {
+	background: linear-gradient(to top right, rgb(77,215,249), rgb(46,128,149));
+	padding-bottom: 70px;
+}
+
+#newSlider {
+	margin-top: 70px;
+}
+
+#sliderText {
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 17px;
+}
+
+ 
+@media screen and (max-width: 500px;) {
+	#sliderText {
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+
+/*Six Container*/
+.sixContainer {
+	height: 150px;
+	background-color: rgb(127,140,141);
+}
+
+
+#logosImage {
+	margin-top: 30px;
+}
+
+/*Seven container*/
+.sevenContainer {
+	background: rgb(44,62,80);
+	display: flex;
+}
+
+#footerItem_logo {
+	padding-bottom: 20px;
+}
+
+#allFooterItem {
+	margin: auto;
+	padding: 100px;
+}
+
+#footerItem {
+	padding-bottom: 10px;
+	color: white;
+	font-size: 14px;
+}
+
+#footerItem_head {
+	padding-bottom: 20px;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.footer {
+	height: 50px;
+	background: black;
+	display: flex;
+}
+
+#theFooter {
+	margin: auto;
+}

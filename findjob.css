@@ -1,0 +1,187 @@
+html {
+	background: rgb(245,245,245);
+} 
+
+#theJobCont {
+	background: white;
+}
+
+#lcontainer {
+	height: 200px;
+	background: gray;
+	background:  url(image/newBg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top down;
+}
+
+.newStyle {
+	background: black; 
+	height: 60px;
+}
+
+.navStyle {
+	padding-left: 10px;
+}
+ 
+ #jobBg {
+ 	background: white;
+ 	 
+ }
+
+#alljob {
+	border-left: 3px solid #ccc;
+
+}
+
+#quickS {
+	background: rgb(41,128,185);
+	padding: 10px;
+	color: white;	
+}
+
+#quickStitle {
+	font-weight: bolder;
+} 
+
+#jobContainer {
+	background: white;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.35);
+	 
+}
+ 
+#jobtitle {
+	font-weight: bolder;
+	color: rgb(41,128,185);
+	font-size: 20px;
+
+}
+
+#jobsubtitle  {
+	position: relative;
+	top: 0px;
+	text-align: right;
+	font-size: 13px;
+	color: rgb(67,160,71);
+
+}
+
+#jobItem {
+	font-weight: bolder;
+	font-size: 12px;
+	text-align: left;
+ 
+}
+
+#jobIcon {
+	padding-right: 15px;
+	color: rgb(41,128,185);
+	font-size: 13px;
+	font-weight: bolder;
+}
+
+
+#jobNote {
+	color: gray;
+	font-size: 13px;
+}
+
+@media only screen and (max-width: 768px){
+	#jobContainer {
+		padding-left: 40px;
+	}
+}
+
+.box {
+ 	margin: auto;
+ }
+
+ input {
+ 	display: inline-block;
+ 	font-size: 20px;
+ 	box-sizing: border-box;
+ 	color: gray;
+ }
+
+
+ input[type="text"] {
+ 	position: relative;
+ 	left: 50px;
+ 	background: #fff;
+ 	width: 340px;
+ 	height: 50px;
+ 	border: 1px solid rgb(41,128,185);
+ 	outline: none;
+ 	padding: 0 25px;
+ 	border-radius: 25px 0  0 25px;
+ }
+
+ input[type="submit"] {
+ 	position: relative;
+ 	left: 5px;
+ 	background: rgb(41,128,185);
+ 	width: 150px;
+ 	height: 50px;
+ 	border: none;
+ 	outline: none;
+ 	padding: 0 25px;
+ 	color: white;
+ 	border-radius: 0 25px 25px 0;
+ }
+
+@media only screen and (max-width: 768px){
+	input[type="text"] {
+	margin-left: -50px;
+ 	width: 300px;
+ 	height: 40px;
+ 
+	}
+
+	 input[type="submit"] {	 
+ 		height: 40px;
+	 }
+
+	  input {
+ 		font-size: 18px;
+	 }
+}
+
+@media only screen and (max-width: 425px){
+	input[type="text"] {
+	margin-left: -65px;
+ 	width: 200px;
+ 	height: 40px;
+ 
+	}
+
+	 input[type="submit"] {	 
+ 		height: 40px;
+ 		width: 100px;
+	 }
+
+	 input {
+ 		font-size: 15px;
+	 }
+ 
+}
+
+#thejob {
+	color: #ccc;
+}
+
+
+/*job alert*/
+#alertContainer {
+	background: white;
+
+}
+
+#alertTitle {
+	margin-top: 20px;
+	border-left: 10px solid rgb(41,128,185);
+	padding-left: 10px;
+	color: gray;
+}

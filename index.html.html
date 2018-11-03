@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hibaku.com</title>
+	<!-- uikit css components file -->
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/components/slideshow.min.css">
+	<link rel="stylesheet" type="text/css" href="css/components/sticky.min.css">
+	<link rel="stylesheet" type="text/css" href="css/components/slidenav.min.css">
+	<link rel="stylesheet" type="text/css" href="css/components/dotnav.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- contom css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+<!-- This is the home page of this project and 
+This page is build using UIkit framework -->
+ <!-- The Navbar in desktop view -->
+ <!-- This nav will hide in on small screen -->
+<nav class="uk-navbar uk-nav-attached uk-navbar-fixed desktop_navbar" data-uk-sticky>
+	<!-- this nav should be hidden what the screen become small -->
+	<a href="" class="uk-navbar-brand navStyle"><img src="image/logo.png" id="brand_Img" width="100" height="100"></a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="navStyle"><a href="findjob.html" id="desktop_Nav_Item">Job</a></li>
+        <li class="uk-parent navStyle"><a href="" id="desktop_Nav_Item">Find Career</a>
+        </li> <!-- the main find career nav end -->
+        <li class="uk-parent navStyle" "><a href="" id="desktop_Nav_Item">Company Review</a></li> 
+        <!-- this is the end of company review -->
+        <li class="uk-parent navStyle"><a href="" id="desktop_Nav_Item">News and Advice</a>
+        </li>
+    </ul>
+	<!-- this float the nav to the right side of the page -->
+	<div class="uk-navbar-flip">
+	        <ul class="uk-navbar-nav uk-hidden-small navStyle">
+	            <li><a href="companyform.html" id="nav_Post_Job">Post Job</a></li>
+	            <li><a href="#my-id" data-uk-modal id="nav_SignIn">Register</a></li>
+	        </ul>
+    	</div>
+   <!-- login Modal -->
+<!-- this modal will popup with the user login info -->
+<div id="my-id" class="uk-modal" >
+    <div class="uk-modal-dialog" id="modal_bg">
+        <a class="uk-modal-close uk-close"></a>         
+         <div class="uk-container uk-container-center">
+         	<h1 class="uk-align-center" id="get_Started_Text">Get Started</h1><br><br>
+			<div class="uk-container uk-container-center">
+				<img src="image/logo.png" width="150" class="uk-align-center"><br> 
+			</div>
+			<h3 id="modal_text_Color_two">Are you a job Seeker?</h3>
+         	<a href="jobseekersignupform.html" class="uk-button uk-width-1-1 uk-margin-small-bottom" id="modal_text_Color_one"><i class="uk-icon-user-plus"></i>  Job Seeker</a><br> 
+         	<h3 id="modal_text_Color_two">Are you a employer?</h3>
+         	<a href="" class="uk-button uk-width-1-1 uk-margin-small-bottom"  id="modal_text_Color_one"> 
+			<i class="uk-icon-building-o"></i>  For Employer
+         	</a><br><br><br>
+			<h4 id="modal_text_Color_two">Already have an account? <a href="#">Login</a></h4>
+         </div> 
+    </div>
+</div>
+    <!-- the offcanvas nav should be visible on the small screen  -->
+    <li class="uk-visible-small navStyle"><a class="uk-navbar-toggle uk-navbar-flip" href="#offcanvasl" data-uk-offcanvas="{mode:'slide'}"></a></li>		
+</nav><!--  End of Navbar in the Desktop view -->
+ <!-- Main offcanvas nav  -->
+<div id="offcanvasl" class="uk-offcanvas ">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+        	<div class="uk-panel">
+        		<a href="" class="uk-navbar-brand"><img src="image/logo.png" width="100" height="100"></a>
+        	</div>
+        	<li class="uk-parent uk-nav-header"><a href="#"><i class="uk-icon-briefcase uk-icon-medium uk-icon-primary"></i>   Jobs</a>
+				<ul class="uk-nav-sub">
+					<li><a href="">Jospeh</a></li>
+					<li><a href="">Smith</a></li>
+					<li><a href="">Adlyn</a></li>
+				</ul>
+        	</li>
+        	<li class="uk-parent uk-nav-header"><a href="#"><i class="uk-icon-mortar-board uk-icon-medium"></i>   Find Career</a>
+				<ul class="uk-nav-sub">
+					<li><a href="">Jospeh</a></li>
+					<li><a href="">Smith</a></li>
+					<li><a href="">Adlyn</a></li>
+				</ul>
+        	</li>	
+        	<li class="uk-parent uk-nav-header"><a href="#"><i class="uk-icon-line-chart uk-icon-medium"></i>   Company Review</a>
+				<ul class="uk-nav-sub">
+					<li><a href="">Jospeh</a></li>
+					<li><a href="">Smith</a></li>
+					<li><a href="">Adlyn</a></li>
+				</ul>
+        	</li>			
+        	<li class="uk-parent uk-nav-header"><a href="#"><i class="uk-icon-newspaper-o uk-icon-medium"></i>   News and Advice</a>
+				<ul class="uk-nav-sub">
+					<li><a href="">Jospeh</a></li>
+					<li><a href="">Smith</a></li>
+					<li><a href="">Adlyn</a></li>
+				</ul>
+        	</li>
+			<div class="uk-nav-divider"></div>
+        	<!-- Post Job -->
+        	<li class="uk-nav-header"><a href="#my-id" data-uk-modal><i class="uk-icon-list-alt uk-icon-medium"></i> Post Jobs</a></li>
+
+        	<div class="uk-nav-divider"></div>
+        	<!-- Sign out -->
+        	<li class="uk-nav-header"><a href="#logInpage" data-uk-modal>Sign Out</a></li>
+        </ul>
+    </div>
+</div> <!-- End of offcanvis Nav -->
+<!-- ****LANDING PAGE ***-->
+<div class="container" id="lcontainer">
+	<div class="uk-container uk-container-center landing_Page_Note">
+		<!-- the welcome note  -->
+		<h1 id="findjob"><strong>Hibaku:</strong> Find job faster and quicker</h1>
+		<!-- search form -->
+		<form id="theSearchBar">
+			<input type="text" name="" placeholder="Search job...">
+			<input type="submit" name="" value="Search">
+		</form>
+		<h4 id="findjob">eg: Company Name, Job Type, Job Title</h4>
+	</div>
+</div>
+<!-- **** SECOND CONTAINER **** -->
+<!-- Site Activities -->
+<div class="uk-container uk-container-center" id="second_container">
+	<div class="uk-grid" data-uk-grid-margin>
+		<!-- Company Review -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-bar-chart-o uk-icon-large" id="careerIcons"></i>Company Review</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>
+				<p class="uk-text-bold"><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small"></i>  Read More..</a></p>
+			</div>
+		</div>
+		<!-- Find Job -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-briefcase uk-icon-large" id="careerIcons"></i>  Find Job</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>  
+				<p class="uk-text-bold"><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small"></i>  Read More..</a></p>
+			</div>
+		</div>
+		<!-- Business news update -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-newspaper-o uk-icon-large" id="careerIcons"></i>  Business News Update</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>
+				<p class="uk-text-bold"><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small"></i>  Read More..</a></p>
+			</div>
+		</div>
+		<!-- Get Noticed -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-users uk-icon-large" id="careerIcons"></i>  Get noticed</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>
+				<p class="uk-text-bold"><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small""></i> Read More..</a></p>
+			</div>
+		</div>
+		<!-- Career Coaching -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-comments uk-icon-large" id="careerIcons"></i>  Career Coaching</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>  
+				<p class="uk-text-bold"><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small""></i>  Read More..</a></p>
+			</div>
+		</div>
+		<!-- Job Planing -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3">
+			<div class="uk-panel uk-panel-box" id="activitiesBox">
+				<h3 class="uk-panel-title uk-text-large uk-text-bold"><i class="uk-icon-pencil-square-o uk-icon-large" id="careerIcons"></i>  Job Planing</h3>
+				<p id="ActivitiesText">
+					My name is Joseph T. Smith and I am writing in application for a scholarship to assist me in pursuing a Bachelor degree (BSC) in Computer
+				</p>
+				<p class="uk-text-bold "><a href="#" id="readMoreText"><i class="uk-icon-angle-double-right uk-icon-small"></i>  Read More..</a></p>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Second Container -->
+<!-- **** THIRD CONTAINER ****  -->
+<!-- Promotion section -->
+<div class="uk-container uk-container-center" id="thridContainer">
+	<div class="uk-grid">
+		<div class="uk-width-large-1-2 uk-width-medium-1-2">
+			<h1 id="thridContainerText"><strong>Hibaku:</strong> We give you the best platform to find the best job within one of the best company in Liberia.</h1>
+		</div>
+		<div class="uk-width-large-1-2 uk-width-medium-1-2">
+			<img src="image/tabletImg.jpg">
+		</div>
+	</div>
+</div> <!-- End of Third container -->
+<!-- **** FOURTH CONTAINER **** -->
+<!-- Business news headlings -->
+<div class="uk-container uk-container-center" >
+	<div class="uk-grid">
+		<div class="uk-width-large-1-1 uk-width-medium-1-1">
+			<h1 class="uk-text-bold" id="whatT">What's Trending...</h1>
+		</div>
+	</div>
+</div>
+<!-- main content -->
+<!-- first  -->
+<div class="uk-container uk-container-center" id="fourth-container">
+	<div class="uk-grid" data-uk-grid-margin">
+		<div class="uk-width-medium-1-3 uk-width-large-1-3" id="first_column">
+			<div class="uk-panel uk-panel-box">
+				<img src="image/business.jpg">
+				<h2 class="uk-panel-title">The decrement of the US$ rate</h2>
+				<p>All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10)...</p>
+				<button class="uk-button uk-width-1-1 uk-margin-small-bottom uk-button-primary">Read More</button>
+			</div>
+		</div>
+		 
+		<!-- second -->
+		<div class="uk-width-medium-1-3 uk-width-large-1-3" id="second_column">
+			<div class="uk-panel uk-panel-box">
+				<img src="image/business1.jpg">
+				<h2 class="uk-panel-title">The Liberian Market is growing rapidly</h2>
+				<p>All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10)...</p>
+				<button class="uk-button uk-width-1-1 uk-margin-small-bottom uk-button-primary">Read More</button>
+			</div>
+		</div>
+		 
+		<div class="uk-width-medium-1-3 uk-width-large-1-3" id="third_column">
+			<div class="uk-panel uk-panel-box">
+				<img src="image/business2.jpg">
+				<h2 class="uk-panel-title">President George Weah Meet with Business Parther</h2>
+				<p>All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10)...</p>
+				<button class="uk-button uk-width-1-1 uk-margin-small-bottom uk-button-primary">Read More</button>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of business news headlings -->
+<!-- **** FIFTH CONTAINER **** -->
+ <!-- User Testmorining   -->
+<div class="fifth-container">
+	<div class="uk-container uk-container-center">
+		<div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, animation:'scroll'}">
+	    <ul class="uk-slideshow">
+	        <li>
+	        	<div class="uk-grid" id="newSlider">
+	        		<div class="uk-width-large-1-2 uk-width-medium-1-2">
+	        		<img src="image/js.jpg" class="uk-border-circle uk-thumbnail uk-align-center" width="50%">
+	        	</div>
+		        	<div class="uk-width-large-1-2 uk-width-medium-1-2">
+		        		<p id="sliderText">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10) years, However, with my curiosity to know more about this career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia.</p>
+		        		<h3 id="sliderText">- by Joseph Smith </h3>
+		        	</div>
+	        	</div>
+	        </li>
+	        <li>
+	        	<div class="uk-grid"  id="newSlider">
+	        		<div class="uk-width-large-1-2 uk-width-medium-1-2">
+	        		<img src="image/author.jpg" class="uk-border-circle uk-thumbnail uk-align-center" width="50%">
+	        	</div>
+		        	<div class="uk-width-large-1-2 uk-width-medium-1-2">
+		        		<p id="sliderText">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10) years, However, with my curiosity to know more about this career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia.</p>
+		        		<h3 id="sliderText">- by T. Joseph Smith </h3>
+		        	</div>
+	        	</div>
+	        </li>
+	        <li>
+	        	<div class="uk-grid"  id="newSlider">
+	        		<div class="uk-width-large-1-2 uk-width-medium-1-2">
+	        		<img src="image/pg.jpg" class="uk-border-circle uk-thumbnail uk-align-center" width="50%">
+	        	</div>
+		        	<div class="uk-width-large-1-2 uk-width-medium-1-2">
+		        		<p id="sliderText">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area within the IT industry with high demand for product, job opportunity projected to rise higher in ten (10) years, However, with my curiosity to know more about this career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia.</p>
+		        		<h3 id="sliderText">- by Olando </h3>
+		        	</div>
+	        	</div>
+	        </li>
+	    </ul>
+	    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+	        <li data-uk-slideshow-item="0"><a href=""></a></li>
+	        <li data-uk-slideshow-item="1"><a href=""></a></li>
+	        <li data-uk-slideshow-item="2"><a href=""></a></li>
+    	</ul>
+	</div>
+	</div>
+</div> <!-- End of fifth container -->
+<!-- **** SIX CONTAINER ****  -->
+<!-- **** SEVEN CONTAINER ****  -->
+<!-- Quick link and Address  -->
+<div class="sevenContainer">
+	<div class="uk-container uk-container-center" >
+		<div class="uk-grid" id="allFooterItem">
+			<div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4">
+				<img src="image/logo.png" width="50%" class="uk-align-center" id="footerItem_logo">
+				<uk >
+					<li id="footerItem">About Us</li>
+					<li id="footerItem">Trends</li>
+					<li id="footerItem">Blogs</li>
+					<li id="footerItem">Research</li>
+					<li id="footerItem">Executive Team</li>
+					<li id="footerItem">Editoral Team</li>
+					<li id="footerItem">Advertise With Us</li>
+					<li id="footerItem">Work at Hibaku</li>
+				</uk>
+			</div>
+			<div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4 uk-align-center">
+				<h3 id="footerItem_head">Contact</h3>
+				<uk >
+					<li id="footerItem">About Us</li>
+					<li id="footerItem">Trends</li>
+					<li id="footerItem">Blogs</li>
+					<li id="footerItem">Research</li>
+					<li id="footerItem">Executive Team</li>
+					<li id="footerItem">Editoral Team</li>
+					<li id="footerItem">Advertise With Us</li>
+					<li id="footerItem">Work at Hibaku</li>
+				</uk>
+			</div>
+			<div class="uk-width-small-1-2 uk-width-medium-1-2 uk-width-large-1-4">
+				 <h3 id="footerItem_head">Contact</h3>
+				<uk >
+					<li id="footerItem">About Us</li>
+					<li id="footerItem">Trends</li>
+					<li id="footerItem">Blogs</li>
+					<li id="footerItem">Research</li>
+					<li id="footerItem">Executive Team</li>
+					<li id="footerItem">Editoral Team</li>
+					<li id="footerItem">Advertise With Us</li>
+					<li id="footerItem">Work at Hibaku</li>
+				</uk>
+			</div>
+			<div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4">
+				<h3 id="footerItem_head">Contact</h3>
+				<uk >
+					<li id="footerItem">About Us</li>
+					<li id="footerItem">Trends</li>
+					<li id="footerItem">Blogs</li>
+					<li id="footerItem">Research</li>
+					<li id="footerItem">Executive Team</li>
+					<li id="footerItem">Editoral Team</li>
+					<li id="footerItem">Advertise With Us</li>
+					<li id="footerItem">Work at Hibaku</li>
+				</uk>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of seven container -->
+<!-- Footer -->
+<div class="footer">
+	<span id="theFooter">Copyright <i class="uk-icon-copyright"></i> 2018 Hibaku,Inc All rights reserved</span>
+</div>
+<!-- UIkit Javascript file -->
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/components/slideshow.min.js"></script>
+<script src="js/components/sticky.min.js"></script>
+</body>
+</html>

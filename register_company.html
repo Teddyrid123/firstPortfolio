@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hibaku.com</title>
+	<!-- uikit css components file -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="register_company.css">
+</head>
+<body>
+
+ 
+<div id="wapper">
+  <h1 id="jobInfo">Basic Information</h1>
+  <hr>
+   <form class="">
+  <div class="form-row">
+    <!-- first name -->
+    <label for="validationDefault01" class="col-sm-4 col-form-label" id="labelStyle">Company Name:</label>
+    <div class="form-group col-md-8">
+      <input type="text" class="form-control" id="fname" title="name" required>
+    </div>
+  </div>
+  <!-- phone number -->
+   <div class="form-row">
+    <label for="validationDefault05" class="col-sm-4 col-form-label" id="labelStyle">Phone:</label>
+    <div class="col-md-8">  
+      <input type="text" class="form-control" id="userPhone" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <label for="validationDefault03" class="col-sm-4 col-form-label" id="labelStyle">Company Type:</label>
+    <div class="col-md-8"> 
+      <select id="inputState" class="form-control" required>
+        <option selected>Full Establish Company</option>
+        <option>Startup Company</option>
+        <option>Small business</option>
+        <option>NGO</option>
+      </select>
+    </div>
+  </div>
+  <!-- Email -->
+  <div class="form-row">
+    <label for="inputEmail4" class="col-sm-4 col-form-label" id="labelStyle">Email:</label>
+    <div class="form-group col-md-8">
+      <input type="email" class="form-control" id="userEmail" required>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+  </div>
+  <!-- password -->
+   <div class="form-row">
+    <label for="inputPassword4" class="col-sm-4 col-form-label" id="labelStyle">Password:</label>
+    <div class="form-group col-md-8">
+      <input type="password" class="form-control" id="pwd" required>
+    </div>
+  </div>
+  <!-- comfirm password -->
+  <div class="form-row">
+    <label for="inputPassword4" class="col-sm-4 col-form-label" id="labelStyle">Comfirm Password:</label>
+    <div class="form-group col-md-8">
+      <input type="password" class="form-control" id="cPwd" required>
+    </div>
+  </div>
+  <!-- County -->
+    <div class="form-row">
+    <label for="validationDefault03" class="col-sm-4 col-form-label" id="labelStyle">County:</label>
+    <div class="col-md-8"> 
+      <select id="inputState" class="form-control" required>
+        <option selected>Montserrado County</option>
+        <option>Maryland County</option>
+        <option>GrandBassa County</option>
+        <option>Sinoe County</option>
+        <option>Grand capemount County</option>
+        <option>Nimba County</option>
+        <option>Margabi County</option>
+        <option>Maryland County</option>
+        <option>Maryland County</option>
+      </select>
+    </div>
+  </div>
+  <!-- the city -->
+  <div class="form-row">
+    <label for="validationDefault04" class="col-sm-4 col-form-label" id="labelStyle">City:</label>
+    <div class="col-md-8">
+      <input type="text" class="form-control" id="userCity" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <label for="inputState" class="col-sm-4 col-form-label" id="labelStyle">Employment Status:</label>
+    <div class="form-group col-md-8">
+      <select id="inputState" class="form-control">
+        <option selected>Currently not working</option>
+        <option>Currently working part-time</option>
+        <option>Currently working full-time</option>
+        <option>Currently working as an Interm</option>
+      </select>
+    </div>
+  </div>
+  <!-- upload CV -->
+  <div class="form-row">
+    <label for="exampleFormControlFile1" class="col-sm-4 col-form-label" id="labelStyle">Upload your CV:</label>
+    <div class="form-group col-md-8">
+      <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary btn-block" type="submit">Submit form</button>
+</form>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

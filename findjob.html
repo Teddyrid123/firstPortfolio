@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hibaku.com</title>
+  <!-- uikit css -->
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/slideshow.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/sticky.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/slidenav.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/dotnav.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/tooltip.min.css">
+  <link rel="stylesheet" type="text/css" href="css/components/search.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- contom css -->
+    <link rel="stylesheet" type="text/css" href="findjob.css">
+    </head>
+<body>
+    <!-- This page is build using UIkit frame 
+      *This page the job page which consist of all the job that employer will be posting 
+      and it's also consist of search form and a quick link which will give the user quick 
+      access to the desired job  -->
+<!-- ** The Navbar ** -->
+<nav class="uk-navbar uk-nav-attached uk-navbar-fixed newStyle" data-uk-sticky>
+  <!-- this nav should be hidden what the screen become small -->
+  <a href="" class="uk-navbar-brand navStyle"><img src="image/logo.png" id="brandImg" width="100" height="100"></a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="navStyle uk-active"><a href="" id="thejob">Jobs</a></li>
+        <li class="uk-parent navStyle" data-uk-dropdown="{mode: 'hover'}"><a href="" id="thejob">Find Career</a>
+          <!-- dropdown nav that is within the Find career nav -->
+      </div> <!-- drodown nav end -->
+        </li> <!-- the main find career nav end -->
+        <li class="uk-parent navStyle" data-uk-dropdown="{mode: 'hover'}"><a href="" id="thejob">Company Review</a></li> <!-- this is the end of company review -->
+
+        <li class="uk-parent navStyle" data-uk-dropdown="{mode: 'hover'}"><a href="" id="thejob">News and Advice</a>
+        </li>
+    </ul>
+  <!-- this float the nav to the right side of the page -->
+  <div class="uk-navbar-flip">
+          <ul class="uk-navbar-nav uk-hidden-small navStyle">
+              <li><a href="companyform.html" id="thePostJob">Post Job</a></li>
+              <li><a href="#my-id" data-uk-modal id="theSignIn">Sign In</a></li>
+          </ul>
+      </div>
+</nav> <!-- End of navbar -->
+<!-- The header container  -->
+<div class="container" id="lcontainer">
+  <div class="uk-container uk-container-center box">
+      <form  id="theSearchBar" data-uk-search>
+           <input type="text" name=""  placeholder="Search the Job title...">
+           <input type="submit" name="" value="Search">     
+      </form>
+  </div>
+</div> <!-- End of header Container -->
+<!-- overall job content container -->
+<div class="jobWrapper">
+    <div class="uk-grid">
+      <!-- The quick search column -->
+    <div class="uk-width-medium-2-10 uk-align-center" >
+        <div class="uk-block" id="jobContainer"> 
+          <div class="uk-panel">
+            <h3 class="uk-panel-title" id="quickS">Quick Search</h3>
+            <hr>
+            <h5 id="quickStitle">Employment Type: </h5>
+                  <a class="uk-button" href="" id="searchItem">Full-Time</a><br><br> 
+                  <a class="uk-button" href="" id="searchItem">Part-Time</a><br><br>  
+                  <a class="uk-button" href="" id="searchItem">Contractor</a><br><br> 
+                  <a class="uk-button" href="" id="searchItem">Internship</a><br><br> 
+                  <a class="uk-button" href="" id="searchItem">Temporary</a><br><br> 
+                  <a class="uk-button" href="" id="searchItem">Commission</a><br>
+              <hr>
+              <h5 id="quickStitle">Company:</h5>
+                  <form class="uk-form">
+                  <fieldset data-uk-margin> 
+                      <select>
+                          <option>Choose Company</option>
+                          <option>Lonestar MTN</option>
+                          <option>Zion Tech</option>
+                          <option>Lonestar MTN</option>
+                          <option>Zion Tech</option>
+                          <option>Lonestar MTN</option>
+                          <option>Zion Tech</option>
+                          <option>Lonestar MTN</option>
+                      </select>
+                      <button class="uk-button">Search</button>               
+                  </fieldset>
+
+                </form>
+              <hr>            
+          </div>
+        </div>
+    </div> <!-- End of Quick search container  -->
+    <!-- The Job content column -->
+    <div class=" uk-width-medium-7-10 uk-width-small-1-1 uk-align-center" id="jobContainer">
+      <div class="uk-block"> 
+        <!-- Sorted bar -->
+        Sort by: <a class="uk-button" href="">Company</a>
+                  <a class="uk-button" href="">Date</a> 
+                  <a class="uk-button" href="">Job Type</a>
+            <hr class="uk-grid-divider">
+            <!-- main content -->
+        <ul class="uk-list">
+            <li>
+                <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/olando.jpg" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Frontend Developer</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">ZionTech</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>             
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="jobdetail.html" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="jobseekersignform.html" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr class="uk-grid-divider">
+            <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo1.jpg" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Accountent</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>       
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+             <hr class="uk-grid-divider">
+            <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Accountent</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>           
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+             <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Accountent</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+               <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Accountent</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>    
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+               <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle"><a href="">Accountent</a></h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+               <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo2.jpg" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle">Accountent</h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+               <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle">Accountent</h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+            </li>
+            <hr>
+               <li>
+               <article class="uk-comment">
+                  <header class="uk-comment-header">
+                      <img class="uk-comment-avatar" src="image/newLogo3.png" width="80" alt="">
+                      <h4 class="uk-comment-title" id="jobtitle">Accountent</h4>
+                      <div class="uk-comment-meta" id="jobItem">Lonestar MTN</div>
+                      <div class="uk-comment-meta" id="jobItem">Full-time</div>
+                      <div class="uk-comment-meta" id="jobItem">Paynesville, AB. Tolbert Rd.</div>
+                      <div class="uk-comment-meta" id="jobsubtitle">4days ago</div>      
+                  </header>
+                  <div class="uk-comment-body"><p id="jobNote">All through, Software and Application development has gain the world attention because of its massive contribution made to the world through means of easy living. Moreover, knowing that it is the fasted growing area  career, I strongly believe that this field will create a unique chance for me to contribute to the world, most especially to my country Liberia...</p>
+                  <span>
+                    <a href="" id="jobIcon"><i class="uk-icon-file-pdf-o" ></i> More details</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-bookmark-o"></i> Save job</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-eye"></i>2.5K</a>
+                    <a href="" id="jobIcon"><i class="uk-icon-share-square-o"></i> Share</a>
+                  </span>
+              </article>
+             </li>
+            <hr>
+        </ul>
+    </div>
+  </div><!--  end of job container -->
+</div>
+<!-- pagining  -->
+ <ul class="uk-pagination">
+    <li><a href="">1
+    </a></li>
+    <li class="uk-active"><span>2</span></li>
+    <li class="uk-disabled"><span>3</span></li>
+    <li><span>4</span></li>
+</ul>
+<!-- Job alert -->
+<div class="uk-container">
+  <div class="uk-grid">
+    <div class="uk-width-medium-3-10">  
+    </div>
+    <div class="uk-width-medium-7-10" id="alertContainer">
+      <h1 id="alertTitle">Sign up for Job Alert</h1>
+      <p>Always be the first to get the a job directly into your email account</p>
+    </div>
+  </div>
+</div>
+<br>
+<!-- quick link at the buttom of the page -->
+<div class="sevenContainer">
+  <div class="uk-container uk-container-center" >
+    <div class="uk-grid" id="allFooterItem">
+      <div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4">
+        <img src="image/logo.png" width="50%" class="uk-align-center" id="footerItem_logo">
+        <uk >
+          <li id="footerItem">About Us</li>
+          <li id="footerItem">Trends</li>
+          <li id="footerItem">Blogs</li>
+          <li id="footerItem">Research</li>
+          <li id="footerItem">Executive Team</li>
+          <li id="footerItem">Editoral Team</li>
+          <li id="footerItem">Advertise With Us</li>
+          <li id="footerItem">Work at Hibaku</li>
+        </uk>
+      </div>
+      <div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4 uk-align-center">
+        <h3 id="footerItem_head">Contact</h3>
+        <uk >
+          <li id="footerItem">About Us</li>
+          <li id="footerItem">Trends</li>
+          <li id="footerItem">Blogs</li>
+          <li id="footerItem">Research</li>
+          <li id="footerItem">Executive Team</li>
+          <li id="footerItem">Editoral Team</li>
+          <li id="footerItem">Advertise With Us</li>
+          <li id="footerItem">Work at Hibaku</li>
+        </uk>
+      </div>
+      <div class="uk-width-small-1-2 uk-width-medium-1-2 uk-width-large-1-4">
+         <h3 id="footerItem_head">Contact</h3>
+        <uk >
+          <li id="footerItem">About Us</li>
+          <li id="footerItem">Trends</li>
+          <li id="footerItem">Blogs</li>
+          <li id="footerItem">Research</li>
+          <li id="footerItem">Executive Team</li>
+          <li id="footerItem">Editoral Team</li>
+          <li id="footerItem">Advertise With Us</li>
+          <li id="footerItem">Work at Hibaku</li>
+        </uk>
+      </div>
+      <div class="uk-width-medium-1-2 uk-width-small-1-2 uk-width-large-1-4">
+        <h3 id="footerItem_head">Contact</h3>
+        <uk >
+          <li id="footerItem">About Us</li>
+          <li id="footerItem">Trends</li>
+          <li id="footerItem">Blogs</li>
+          <li id="footerItem">Research</li>
+          <li id="footerItem">Executive Team</li>
+          <li id="footerItem">Editoral Team</li>
+          <li id="footerItem">Advertise With Us</li>
+          <li id="footerItem">Work at Hibaku</li>
+        </uk>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- End of Job container -->
+<div class="footer">
+  <span id="theFooter">Copyright <i class="uk-icon-copyright"></i> 2018 Hibaku,Inc All rights reserved</span>
+</div>
+<!-- UIKit components install file -->
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/components/slideshow.min.js"></script>
+<script src="js/components/sticky.min.js"></script>
+<script src="js/components/tooltip.min.js"></script>
+<script src="js/components/search.min.js"></script>
+</body>
+</html>
